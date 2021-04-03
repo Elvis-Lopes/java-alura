@@ -6,7 +6,7 @@ public class TesteConversao {
 		int valor = (int) salario;
 		
 		System.out.println(valor);
-
+		
 	}
 
 }
