@@ -4,7 +4,7 @@ public class Conta {
 	private String titular;
 	private int agencia; 
 	private int numeroDaConta;
-	private double saldo;
+	private double saldo = 0;
 	
 	Conta(){
 
