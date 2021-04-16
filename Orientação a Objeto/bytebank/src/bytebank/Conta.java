@@ -42,4 +42,16 @@ public class Conta {
 		return saldo;
 	}
 
+	
+	public void depositar(double valor) {
+		this.saldo += valor;
+	}
+	
+	public void sacar(double valor) {
+		if(this.saldo > 0) {
+			this.saldo -= valor;
+		}else {
+			System.out.println("Não foi possível realizar o saque devido a falta de saldo");
+		}
+	}
 }
