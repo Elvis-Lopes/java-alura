@@ -2,11 +2,11 @@ package bytebank;
 
 public class Conta {
 	private String titular;
-	private int agencia; 
-	private int numeroDaConta;
+	private int agencia = 146; 
+	private int numeroDaConta = 000;
 	private double saldo = 0;
 	
-	Conta(){
+	public Conta(){
 
 	}
 	
@@ -42,7 +42,6 @@ public class Conta {
 		return saldo;
 	}
 
-	
 	public void depositar(double valor) {
 		this.saldo += valor;
 	}
