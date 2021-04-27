@@ -6,10 +6,14 @@ public class CriaConta {
 
 	public static void main(String[] args) {
 	Conta primeiraConta = new Conta();
+	Conta segundaConta = new Conta();
 	primeiraConta.depositar(100);
+	segundaConta.depositar(100);
 	Scanner input = new Scanner(System.in);
 	
-	//primeiraConta.setSaldo(200);
+	primeiraConta.transfere(50, segundaConta);
+	System.out.println(segundaConta.getSaldo());
+	/*primeiraConta.setSaldo(200);
 	System.out.print("Digite o nome do titular: ");
 	primeiraConta.setTitular(input.next());
 	
@@ -25,7 +29,7 @@ public class CriaConta {
 	primeiraConta.sacar(100);
 	System.out.println("Titular:" + primeiraConta.getTitular() + "\n" +
 			"Saldo: " + primeiraConta.getSaldo());
-	/*
+	
 	Conta segundaConta = new Conta();
 	segundaConta.setSaldo(50);
 	
