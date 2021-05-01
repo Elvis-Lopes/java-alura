@@ -25,9 +25,14 @@ public class Conta{
 		System.out.println("valor de R$"+ valor + " depositado!");
 	}
 	
-	public void sacar (double valor) {
-		this.saldo -= valor;
-		System.out.println("Valor de R$"+ valor + " foi sacado!");
+	public boolean sacar (double valor) {
+		if(this.saldo >= valor) {
+			this.saldo -= valor;
+			System.out.println("Valor de R$"+ valor + " foi sacado!");
+			return true;
+		}else {
+			return false;
+		}
 	}
 	
 	
