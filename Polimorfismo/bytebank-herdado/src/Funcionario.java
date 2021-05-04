@@ -6,6 +6,7 @@ public class Funcionario {
 	private double salario;
 	
 	public Funcionario(String nome, String cpf, double salario) {
+		super();
 		this.nome = nome;
 		this.cpf = cpf;
 		this.salario = salario;
