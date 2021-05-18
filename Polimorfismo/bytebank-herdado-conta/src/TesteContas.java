@@ -20,9 +20,6 @@ public class TesteContas {
 		cc.deposita(100);
 		System.out.println("Valor da CC após deposito " + cc.getSaldo());
 		
-		cc.sacar(50);
-		System.out.println("Valor da CC após saque " + cc.getSaldo());
-		
 		cc.transferir(10, conta2);
 		System.out.println("Valor da CC após transferir " + cc.getSaldo());
 		
