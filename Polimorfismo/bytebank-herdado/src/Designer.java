@@ -10,6 +10,6 @@ public class Designer extends Funcionario {
 
 	public double getBonificacao() {
 		System.out.println("Chamando metodo de bonificação do Designer");
-		return super.getBonificacao() + 100;
+		return 200;
 	}
 }
