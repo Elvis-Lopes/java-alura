@@ -15,4 +15,11 @@ public class ContaCorrente extends Conta{
 	public void transferir(double valor, Conta conta) {
 		super.transferir(valor + 0.20, conta);
 	}
+
+	@Override
+	public void deposita(double valor) {
+		super.saldo += valor;
+	}
+	
+	
 }

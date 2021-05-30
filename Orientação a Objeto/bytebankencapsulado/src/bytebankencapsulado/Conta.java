@@ -1,6 +1,19 @@
 package bytebankencapsulado;
 
-public class Conta {
+public abstract class Conta {
+	
+	private double saldo;
+	private int agencia;
+	private int conta;
+	private int numero;
+	Cliente titular;
+	private static int total;
+	
+	public Conta(int agencia, int numero) {
+		this.agencia = agencia;
+		this.numero = numero;
+		Conta.total++;
+	}
 	
 	public double getSaldo() {
 		return saldo;
@@ -19,6 +32,19 @@ public class Conta {
 	}
 	public void setNumero(int numero) {
 		this.numero = numero;
+	}
+	
+	
+	public Cliente getTitular() {
+		return titular;
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public static int getTotal() {
+		return Conta.total;
 	}
 	
 	public void deposita(double valor) {
@@ -43,30 +69,5 @@ public class Conta {
 			return false;
 		}		
 	}
-	
-	public Cliente getTitular() {
-		return titular;
-	}
-	
-	public void setTitular(Cliente titular) {
-		this.titular = titular;
-	}
-	
-	public static int getTotal() {
-		return Conta.total;
-	}
-	
-	public Conta(int agencia, int numero) {
-		this.agencia = agencia;
-		this.numero = numero;
-		Conta.total++;
-	}
-	
-	private double saldo;
-	private int agencia;
-	private int conta;
-	private int numero;
-	Cliente titular;
-	private static int total;
 	
 }
