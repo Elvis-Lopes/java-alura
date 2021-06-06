@@ -3,16 +3,11 @@ public class TesteGerente {
 
 	public static void main(String[] args) {
 		
+		Gerente gerente = new Gerente("Qualquer", "seila", 500, 123);
+		
 		Funcionario g1 = new Gerente("Marco", "48357934", 5000.00, 123);
 		Funcionario ev = new EditorVideo("Vitoria", "21343", 1000.00);
 		Funcionario ds = new Designer("Juliana", "943284", 3000);
-		/*
-		System.out.println(g1.getNome());
-		System.out.println(g1.getCpf());
-		System.out.println(g1.getSalario());
-		g1.setSenha(1234);	
-		boolean autenticou = g1.autentica(2222);
-		*/
 		
 		ControleBonificacao controle = new ControleBonificacao();
 		

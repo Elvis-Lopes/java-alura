@@ -1,5 +1,5 @@
 
-public class ContaCorrente extends Conta{
+public class ContaCorrente extends Conta implements Tributavel{
 
 	public ContaCorrente(int agencia, int conta) {
 		super(agencia, conta);
@@ -20,6 +20,11 @@ public class ContaCorrente extends Conta{
 	public void deposita(double valor) {
 		super.saldo += valor;
 	}
-	
+
+	@Override
+	public double getValorImposto() {
+		// TODO Auto-generated method stub
+		return super.saldo * 0.01;
+	}
 	
 }

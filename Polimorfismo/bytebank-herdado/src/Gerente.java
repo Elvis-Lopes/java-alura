@@ -1,5 +1,6 @@
 
-public class Gerente extends FuncionarioAutenticavel {
+public class Gerente extends FuncionarioAutenticavel
+implements Autenticavel{
 
 	private int senha;
 
@@ -11,5 +12,25 @@ public class Gerente extends FuncionarioAutenticavel {
 	public double getBonificacao() {
 		System.out.println("Chamando o metodo de bonificaçao do gerente");
 		return super.getSalario();
+	}
+
+	@Override
+	public void setSenha(int senha) {
+		this.senha = senha;	
+	}
+
+	public int getSenha() {
+		return senha;
+	}
+
+	@Override
+	public boolean autentica(int senha) {
+		if(this.senha == senha) {
+			System.out.println( "Acesso aprovado");
+			return true;
+		}else {
+			System.out.println("Acesso negado");
+			return false;
+		}
 	}
 }

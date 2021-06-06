@@ -1,5 +1,5 @@
 
-public class Administrador extends FuncionarioAutenticavel {
+public class Administrador extends FuncionarioAutenticavel implements Autenticavel {
 	
 	private int senha;
 	

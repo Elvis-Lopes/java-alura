@@ -5,5 +5,11 @@ public class ContaPoupanca extends Conta {
 		super(agencia, conta);
 		// TODO Auto-generated constructor stub
 	}
+
+	@Override
+	public void deposita(double valor) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

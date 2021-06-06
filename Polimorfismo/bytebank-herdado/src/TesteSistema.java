@@ -4,10 +4,12 @@ public class TesteSistema {
 	public static void main(String[] args) {
 		Gerente g = new Gerente("Elvis", "12345", 3000, 222);
 		Administrador ad = new Administrador("Luana", "3843", 50);
+		Cliente cliente = new Cliente();
 		
-		SistemaInterno st = new SistemaInterno();
+		SistemaInterno si = new SistemaInterno();
 		
-		st.autentica(g);
+		cliente.setSenha(133);
+	
 	}
 
 }

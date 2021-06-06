@@ -1,22 +1,19 @@
 
-public class SistemaInterno implements Autenticavel {
-
+public class AutenticacaoUtil {
+	
 	private int senha;
 	
-	@Override
 	public void setSenha(int senha) {
-		this.senha = senha;
-		
+		this.senha = senha;	
 	}
 
-	@Override
+	
 	public boolean autentica(int senha) {
 		if(this.senha == senha) {
 			return true;
-		}else {
+		} else {
 			return false;
 		}
 	}
-	
-	
+
 }

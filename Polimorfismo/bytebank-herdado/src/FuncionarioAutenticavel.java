@@ -1,5 +1,6 @@
 
-public abstract class FuncionarioAutenticavel extends Funcionario {
+public abstract class FuncionarioAutenticavel extends Funcionario
+implements Autenticavel{
 
 	private int senha;
 
@@ -8,10 +9,14 @@ public abstract class FuncionarioAutenticavel extends Funcionario {
 		
 	}
 	
-	private void setSenha(int senha) {
-		this.senha = senha;
-	}
 	
+	@Override
+	public void setSenha(int senha) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
 	public boolean autentica(int senha) {
 		if(this.senha == senha) {
 			System.out.println( "Acesso aprovado");
@@ -21,6 +26,5 @@ public abstract class FuncionarioAutenticavel extends Funcionario {
 			return false;
 		}
 	}
-	
 	
 }
